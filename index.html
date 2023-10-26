@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Primi passi operativi per creare un template per i post. Scopri come iniziare in modo facile.">
+    <title>Creazione template per i post - Blog Epicode</title>
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  </head>
+  <body>
+    <header>   <!-- MACRO CONTENITORE HEADER -->
+      <img src="./assets/img/logo.svg" alt="logo" id="logo">
+      <h1>EPICODE - IL BLOG DEI DEVELOPERS</h1>
+      <nav>
+        <ol>
+          <li><a href="#">&rArr; HOME &lArr;</a></li>
+          <li><a href="#">&rArr; ARTICOLI &lArr;</a></li>
+          <li><a href="#">&rArr; LAVORA CON NOI &lArr;</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>  <!-- MACRO CONTENITORE MAIN -->
+      <article> 
+        <h3>Come creare un template per i post</h3>
+        <div>
+          <p><i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i></p>
+          <p>pubblicato il 25-10-2020</p>
+        </div>
+        <p>La prima cosa da fare e' suddividere in blocchi logici la pagina, identificando le <span>parti comuni</span> da applicare a tutte le pagine</p>
+        <p>Le varie aree saranno quindi suddivise in:</p><br>
+        <ul>
+          <li>Contenuti di intestazione del tag <code class="greybox">&lt;header&gt;</code></li>
+          <li>Contenuti centrali variabili del tag <code class="greybox">&lt;main&gt;</code> <code>&lpar;corpo principale&rpar;</code></li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <code class="greybox">&lt;footer&gt;</code></li>
+        </ul>
+        <p>Formattazione del codice <br> Il testo dell'articolo dovra' essere formattato per identificare tutte le parti da <span>selezione con i CSS.</span> Percio' i passi saranno:</p><br>
+        <ol id="list3">
+          <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+          <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+        <p>L'applicazione di stili CSS e' cresciuta negli anni fino a raggiungere la diffusione pressoche' totale.</p>
+      </article>
+      <table> <!-- tabella -->
+        <caption>Diffusione dei CSS</caption>
+        <tr>
+            <th>Anno</th>
+            <th>&#37; di utilizzo</th>
+            <th>Supporto browsers</th>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>20&#37;</td>
+            <td>17&#37;</td>
+        </tr>
+        <tr>
+            <td class="grey">2002</td>
+            <td class="grey">35&#37;</td>
+            <td class="grey">22&#37;</td>
+        </tr>
+        <tr>
+            <td>2004</td>
+            <td>45&#37;</td>
+            <td>42&#37;</td>
+        </tr>
+        <tr>
+            <td class="grey">2008</td>
+            <td class="grey">80&#37;</td>
+            <td class="grey">51&#37;</td>
+        </tr>
+        <tr>
+            <td>2012</td>
+            <td>100&#37;</td>
+            <td>76&#37;</td>
+        </tr>
+      </table>
+      <section>
+        <p> Un test di validazione potra' essere fatto tramite
+          <a href="https://validator.w3.org/" target="_blank" class="blulink">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro: 
+        </p>
+        <br>
+        <video poster="./assets/img/poster.png" controls muted>
+          <source src="./assets/video/video-1.mp4" type="video/mp4">
+        </video>
+      </section>
+      <div class="box">
+        <h4>NOVITA'</h4>
+        <p>Vuoi rimanere aggiornato su altre novita' del blog? Iscriviti alla nostra newsletter:</p>
+        <form action="#" method="#">
+          <input type="email" value="inserisci l'email">
+          <input type="submit">
+        </form>
+      </div>
+      <aside id="correlati"> <!-- contenitore articoli correlati -->
+        <h4>ARTICOLI CORRELATI</h4>
+        <p class="box1">
+            <a href="#" class="blulink">Validare il codice HTML</a><br>
+            <i class="fas fa-tag"></i> Categoria: develop<br>
+            <b><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</b>
+        </p>
+        <p class="box1">
+            <a href="#" class="blulink">Correggere la sintassi</a><br>
+            <i class="fas fa-tag"></i> Categoria: develop<br>
+            <b><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</b>
+        </p>
+        <p class="box1">
+            <a href="#" class="blulink">Meno Kb nella pagina</a><br>
+            <i class="fas fa-tag"></i> Categoria: ottimizzazione<br>
+            <b><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</b>
+        </p>
+      </aside>
+    </main>
+    <footer>  <!-- MACRO CONTENITORE FOOTER -->
+      <p><code>Blog Epicode &copy;2023</code></p>
+      <address>
+        Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        <a href="mailto:info@epicode.school"><span>info@epicode.school</span></a>
+      </address>
+    </footer>
+  </body>
+</html>
